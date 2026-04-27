@@ -1,0 +1,54 @@
+⚠️ 4 things that MUST match your notebook
+1️⃣ Image size (VERY IMPORTANT)
+
+In your notebook:
+
+MobileNetV2 / VGG16 → usually 224×224
+Xception → usually 299×299
+
+👉 If your notebook used:
+
+target_size=(299, 299)
+
+Then change in predict.py:
+
+def preprocess(img_path, target_size=(299, 299)):
+2️⃣ Preprocessing function ⚠️
+
+This is the #1 reason predictions go wrong
+
+In your notebook you probably used something like:
+
+from tensorflow.keras.applications.xception import preprocess_input
+
+👉 If YES, then change this:
+
+❌ Current (generic)
+img_array = img_array / 255.0
+✅ Replace with:
+from tensorflow.keras.applications.xception import preprocess_input
+img_array = preprocess_input(img_array)
+3️⃣ Class labels (CRITICAL)
+
+From your notebook, run:
+
+train_generator.class_indices
+
+Example output:
+
+{'cat': 0, 'dog': 1, 'car': 2}
+
+👉 Convert to:
+
+CLASS_NAMES = ['cat', 'dog', 'car']
+
+If this is wrong → predictions will be wrong ❌
+
+4️⃣ Model file paths
+
+Make sure:
+
+models/
+├── MobileNetV2.h5
+├── VGG16.h5
+├── Xception.h5
