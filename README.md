@@ -24,10 +24,10 @@ The models are trained on a custom dataset and evaluated using:
 
 ---
 
-## 🖼️ Project Workflow
+## 🖼️ Project Report
 
 <p align="center">
-  <img src="https://via.placeholder.com/700x300.png?text=Dataset+→+Training+→+Model+→+Prediction" />
+  * 📦 jsonfiles → [Download](https://drive.google.com/file/d/1rYlUIJyN2EXxqa37S4E9spXZRwltxiZe/view?usp=sharing)
 </p>
 
 ---
