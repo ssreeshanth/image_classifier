@@ -26,11 +26,7 @@ The models are trained on a custom dataset and evaluated using:
 
 ## 🖼️ Project Report
 
-<p align="center">
-  * 📦 Report → [Download](https://drive.google.com/file/d/1rYlUIJyN2EXxqa37S4E9spXZRwltxiZe/view?usp=sharing)
-</p>
-
----
+* 📦 Report → [Download](https://drive.google.com/file/d/1rYlUIJyN2EXxqa37S4E9spXZRwltxiZe/view?usp=sharing)
 
 ## 🤖 Trained Models
 
